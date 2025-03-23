@@ -55,9 +55,9 @@ header {
 
 
 .menu nav ul li a:hover {
-    background-color: #ff6f61; 
+    background-color: #32adfe; 
     color: #fff;
-    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.5);
+    box-shadow: 0 4px 8px rgba(37, 161, 223, 0.5);
 }
 
 /*Celular*/
