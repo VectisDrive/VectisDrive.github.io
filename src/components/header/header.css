@@ -6,12 +6,11 @@ header {
     color: #fff; 
     width: 100%;
     padding: 20px;
-    background: #91ccc5; 
+    background: #ffff; 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -45,7 +44,7 @@ header {
 }
 
 .menu nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
