@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vectis Drive</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pagina Web de Vectis Drive</h1>
+    <header>
+        <div class="header-component"></div>
+    </header>
+    <main>
+        <div class="postheader">
+            <div class="img-postheader">
+                <img src="/src/img/truck_blender_render_3.png" alt="Simulador Vectis Drive" ondragstart="return false;" oncontextmenu="return false;">
+                <div class="title-postheader">
+                    <h1>Vectis Drive 0.4</h1>
+                    <p>¡Tu simulador educativo GRATUITO para aprender conducción y logística de manera interactiva!</p>
+                </div>
+                <div class="buttons-postheader">
+                    <button class="button-download" onclick="window.location.href='download-link-here';">Descargar</button>
+                    <button class="button-news onclick="window.location.href='whats-new-link-here';">¿Qué hay de nuevo?</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="features">
+            <h2>¿Qué puedes aprender con Vectis Drive?</h2>
+            <div class="feature-item">
+                <h3>🚚 Manejo de vehículos de carga</h3>
+                <p>Domina las operaciones con camiones y vehículos pesados en un entorno realista.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🛣️ Seguridad vial 100%</h3>
+                <p>Refuerza tus conocimientos y actúa con seguridad en la carretera.</p>
+            </div>
+            <div class="feature-item">
+                <h3>⚡ Toma de decisiones en tiempo real</h3>
+                <p>Enfrenta situaciones del mundo real y mejora tu capacidad de respuesta.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>¡Prepárate para el futuro del transporte y la logística!</h2>
+            <p>Vectis Drive es la herramienta digital perfecta para complementar tu formación y prepararte para el mundo laboral. ¡Es gratis, fácil de usar y lo mejor de todo, te ayuda a aprender mientras te diviertes!</p>
+            <a href="download-link-here" class="cta-button">¡Descarga Vectis Drive y comienza a conducir tu futuro!</a>
+        </section>
+
+    </main>
+
+    <script src="/src/components/header/header.js"></script>
 </body>
 </html>

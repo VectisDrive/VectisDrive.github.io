@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+main{
+    margin-top: 3%;
+    width: 60%;
+    width: 100%;
+    border: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.postheader{
+    border: 0px solid;
+    width: 100%;
+    position: relative;
+}
+.img-postheader img{
+    width: 100%; 
+    height: 20%; 
+    filter: brightness(50%); 
+}
+
+.title-postheader, .buttons-postheader {
+    position: absolute;
+    top: 66%; 
+    left: 10%;
+}
+
+.title-postheader{
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.title-postheader h1{
+    font-weight: 800;
+    font-size: 50px;
+}
+.title-postheader p{
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.buttons-postheader {
+    top: 80%; 
+    display: flex;
+    gap: 5%;
+
+}
+
+.button-download{
+    color: #000;
+    background-color: #fff;
+    border: 0px ;
+    border-radius: 10px;
+    height: 45px;
+    width: 180px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-news{
+    color: #fff;
+    background-color: #b7b7b75b;
+    border: 0px ;
+    border-radius: 10px;
+    height: 45px;
+    width: 250px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
