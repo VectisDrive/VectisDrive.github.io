@@ -169,3 +169,20 @@ button:hover {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1920px) {
+    .title{
+        margin-bottom: 4%;
+    }
+}
+
+@media (max-width: 1542px){
+    .title{
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 1316px) {
+    
+}

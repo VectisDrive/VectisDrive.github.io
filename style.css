@@ -234,6 +234,8 @@ section {
     transform: scale(1.1);
 }
 
+
+/* RESPONSIVE */
 @media (max-width: 1920px) {
     .buttons-postheader {
         top: 83%;
