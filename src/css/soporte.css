@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+main{
+    margin-top: 6%;
+    margin-bottom: 5%;
+    font-family: "Nunito Sans",sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.title{
+    margin-bottom: 3%;
+}
+.title h1{
+    margin-bottom: 1%;
+}
+
+.support-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.support-header h1 {
+    font-size: 2.5rem;
+}
+
+.support-header p {
+    font-size: 1.2rem;
+}
+
+/* Main Section */
+.support-main {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+}
+
+/* FAQ Section */
+
+.faq {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.faq-item p, .faq-item h3{
+    margin-left: 2%;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+    opacity: 1;
+}
+
+.faq-item.open .faq-question {
+    color: #0056b3;
+}
+
+.contact-form
+{
+    margin-top: 5%;
+}
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#form-status {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}

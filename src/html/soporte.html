@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Vectis Drive</title>
+    <link rel="shortcut icon" href="/src/icons/Logo_Vectis_Drive.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/95b158783a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/soporte.css">
+    <script src="/src/components/header/header.js"></script>
+    <script src="/src/components/footer/footer.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-component"></div>
+    </header>
+    <main class="support-main">
+        <div class="title">
+            <h1>Centro de Soporte de Vectis Drive</h1>
+            <p>Estamos aquí para ayudarte. Encuentra respuestas a tus preguntas o contáctanos si necesitas asistencia
+                adicional.</p>
+        </div>
+        <div class="container">
+            <section class="faq">
+                <h2>Preguntas Frecuentes (FAQ)</h2>
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cómo puedo descargar Vectis Drive?</h3>
+                    <p class="faq-answer">Simplemente haz clic en el botón de descarga en la página principal o en la
+                        sección de "Descargar" de esta página.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Es compatible con todos los sistemas operativos?</h3>
+                    <p class="faq-answer">Vectis Drive es compatible con Windows. Se recomienda tener al menos Windows 7
+                        o superior.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cómo puedo solucionar problemas con la instalación?</h3>
+                    <p class="faq-answer">Asegúrate de tener los permisos de administrador y desactivar temporalmente el
+                        antivirus si es necesario. Si persisten los problemas, contacta a nuestro soporte técnico.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cuales son los requisitos minimos?</h3>
+                    <p class="faq-answer">Un procesador i3 de 11gen, 8 de ram, grafica integrada y 250mb disponibles</p>
+                </div>
+            </section>
+            <section class="contact-form">
+                <h2>Contacto</h2>
+                <p>Si no encontraste lo que buscas o necesitas ayuda personalizada, completa el siguiente formulario y
+                    te responderemos lo antes posible.</p>
+
+                <form id="contact-form" action="https://formspree.io/f/xblgyeeq" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <p id="form-status"></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-component"></div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+            let form = event.target;
+            let formData = new FormData(form);
+
+            let response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            let statusMessage = document.getElementById("form-status");
+            if (response.ok) {
+                statusMessage.innerText = "¡Mensaje enviado con éxito!";
+                form.reset();
+            } else {
+                statusMessage.innerText = "Hubo un error, intenta de nuevo.";
+            }
+        });
+    </script>
+</body>
+
+</html>
