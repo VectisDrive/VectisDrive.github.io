@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vectis Drive</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95b158783a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="header-component"></div>
@@ -13,42 +16,70 @@
     <main>
         <div class="postheader">
             <div class="img-postheader">
-                <img src="/src/img/truck_blender_render_3.png" alt="Simulador Vectis Drive" ondragstart="return false;" oncontextmenu="return false;">
+                <img src="/src/img/truck_blender_render_3.png" alt="Simulador Vectis Drive" ondragstart="return false;"
+                    oncontextmenu="return false;">
                 <div class="title-postheader">
-                    <h1>Vectis Drive 0.4</h1>
+                    <h1>Vectis Drive 0.5</h1>
                     <p>¡Tu simulador educativo GRATUITO para aprender conducción y logística de manera interactiva!</p>
                 </div>
                 <div class="buttons-postheader">
-                    <button class="button-download" onclick="window.location.href='download-link-here';">Descargar</button>
-                    <button class="button-news onclick="window.location.href='whats-new-link-here';">¿Qué hay de nuevo?</button>
+                    <button class="button-download"
+                        onclick="window.location.href='/src/setup/VectisDriveSetUp.exe';">Descargar</button>
+                    <button class="button-news onclick=" window.location.href='whats-new-link-here' ;">¿Qué hay de
+                        nuevo?</button>
                 </div>
             </div>
         </div>
 
         <section class="features">
             <h2>¿Qué puedes aprender con Vectis Drive?</h2>
-            <div class="feature-item">
-                <h3>🚚 Manejo de vehículos de carga</h3>
-                <p>Domina las operaciones con camiones y vehículos pesados en un entorno realista.</p>
+            <div class="items">
+                <div class="feature-item">
+                    <h3>🚚 Manejo de vehículos de carga</h3>
+                    <p>Domina las operaciones con camiones y vehículos pesados en un entorno realista.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🛣️ Seguridad vial 100%</h3>
+                    <p>Refuerza tus conocimientos y actúa con seguridad en la carretera.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚡ Toma de decisiones en tiempo real</h3>
+                    <p>Enfrenta situaciones del mundo real y mejora tu capacidad de respuesta.</p>
+                </div>
             </div>
-            <div class="feature-item">
-                <h3>🛣️ Seguridad vial 100%</h3>
-                <p>Refuerza tus conocimientos y actúa con seguridad en la carretera.</p>
+            <div class="text-items">
+                <p>¡Con Vectis Drive: Power Knowledge llevas el aprendizaje técnico al siguiente nivel! Olvídate de los
+                    métodos aburridos y sumérgete en un entorno interactivo donde construyes, operas y optimizas camiones en
+                    un simulador realista. Aprende de manera dinámica mientras ensamblas modelos virtuales, tomas decisiones
+                    estratégicas sobre cargas y rutas, gestionas recursos y enfrentas desafíos como reparaciones y
+                    obstáculos en carretera. Todo en una experiencia envolvente que no solo te enseña, sino que te prepara
+                    para la industria del transporte y la logística. Con cada lección superada, obtienes reconocimiento y
+                    avances en un mundo diseñado para que aprendas jugando. ¡Haz que el conocimiento cobre vida con Vectis
+                    Drive!</p>
+
+                <img src="/src/img/user_playing_holding_the_cab.png" alt="Person Building a Truck">
             </div>
-            <div class="feature-item">
-                <h3>⚡ Toma de decisiones en tiempo real</h3>
-                <p>Enfrenta situaciones del mundo real y mejora tu capacidad de respuesta.</p>
-            </div>
+            
         </section>
 
         <section class="cta">
-            <h2>¡Prepárate para el futuro del transporte y la logística!</h2>
-            <p>Vectis Drive es la herramienta digital perfecta para complementar tu formación y prepararte para el mundo laboral. ¡Es gratis, fácil de usar y lo mejor de todo, te ayuda a aprender mientras te diviertes!</p>
-            <a href="download-link-here" class="cta-button">¡Descarga Vectis Drive y comienza a conducir tu futuro!</a>
+            <img src="/src/img/user_playing_driving.png" alt="User Driving">
+            <div class="cta-items">
+                <h2>¡Prepárate para el futuro del transporte y la logística!</h2>
+                <p>Vectis Drive es la herramienta digital perfecta para complementar tu formación y prepararte para el mundo
+                    laboral. ¡Es gratis, fácil de usar y lo mejor de todo, te ayuda a aprender mientras te diviertes!</p>
+                <a href="/src/setup/VectisDriveSetUp.exe" class="cta-button">¡Descarga Vectis Drive y comienza a conducir tu futuro!</a>
+            </div>
         </section>
 
     </main>
 
+    <footer>
+        <div class="footer-component"></div>
+    </footer>
+
     <script src="/src/components/header/header.js"></script>
+    <script src="/src/components/footer/footer.js"></script>
 </body>
+
 </html>
