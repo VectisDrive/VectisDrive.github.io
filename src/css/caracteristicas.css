@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    font-family: "Nunito Sans",sans-serif;
+}
+.features {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.features h2{
+    margin-bottom: 5%;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item:hover i {
+    transform: rotate(20deg);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Retardo en la animación para cada item */
+.feature-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.feature-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.feature-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.feature-item:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.feature-item:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.feature-item:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.feature-item:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+.feature-item:nth-child(10) {
+    animation-delay: 2s;
+}
