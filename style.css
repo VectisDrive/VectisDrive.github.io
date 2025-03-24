@@ -53,12 +53,11 @@ body {
     font-size: 20px;
     color: #ffffff;
 }
-
+/* Estos botones tiene que ser cambiados para que sea responsive*/
 .buttons-postheader {
     top: 80%;
     display: flex;
     gap: 5%;
-
 }
 
 .button-download {
@@ -117,12 +116,14 @@ section {
     margin-bottom: 5%;
 }
 
+/* Cambiar para Responsive*/
 .items {
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
     justify-content: center;
     padding: 20px;
+    border: 0px solid;
 }
 
 .text-items {
@@ -131,6 +132,7 @@ section {
     border: 0px solid;
 }
 
+/*Cambiar para Responsive*/
 .text-items img {
     width: 50%;
     border-radius: 15px;
@@ -196,8 +198,8 @@ section {
     filter: sepia(0.4) saturate(2) brightness(1.2);
     border-radius: 15px;
     filter: brightness(80%);
-
 }
+/*Cambiar para Responsive*/
 .cta-items {
     border-radius: 10px;
     color: white;
@@ -230,4 +232,73 @@ section {
 .cta-button:hover {
     background-color: #0056b3;
     transform: scale(1.1);
+}
+
+@media (max-width: 1920px) {
+    .buttons-postheader {
+        top: 83%;
+        display: flex;
+        gap: 5%;
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+        padding: 20px;
+        border: 0px solid;
+    }
+
+    .cta-items {
+        border-radius: 10px;
+        color: white;
+        max-width: 600px;
+        z-index: 1;
+        margin-right: 40%;
+    }
+}
+
+@media (max-width: 1316px) {
+
+    .buttons-postheader {
+        top: 86%;
+        display: flex;
+        gap: 5%;
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+        padding: 20px;
+        border: 0px solid;
+    }
+
+    .feature-item {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        max-width: 300px;
+        margin-bottom: 2%;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-items {
+        
+        border-radius: 10px;
+        color: white;
+        max-width: 600px;
+        z-index: 1;
+        margin-right: 30%;
+    }
+    .text-items img {
+        width: 40%;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
 }
