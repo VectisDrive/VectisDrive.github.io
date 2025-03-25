@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.title-div {
+    border: 0px solid;
+    width: 100%;
+    position: relative;
+}
+
+.title-img img {
+    width: 100%;
+    height: 20%;
+    filter: brightness(50%);
+}
+
+.title-postheader,
+.buttons-postheader {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    border: 0px solid;
+}
+
+.title-postheader {
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+.title-postheader h1 {
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.title-postheader p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+}
+/* Estos botones tiene que ser cambiados para que sea responsive*/
+.buttons-postheader {
+    top: 45%;
+    display: flex;
+    flex-direction: column; /* Para alinear los elementos verticalmente */
+    gap: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Alinea horizontalmente */
+}
+
+.buttons-postheader p{
+    margin-top: 1%;
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.button-download {
+    color: #000;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 10px;
+    height: 45px;
+    width: 300px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.content-container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.news-attends {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.news-attends h2 {
+    font-size: 2rem;
+    color: #2e3a59;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.news-list p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    background-color: transparent;
+    border-left: 4px solid #32adfe;
+    transition: transform 0.3s ease;
+}
+
+.feature-item h3 {
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+}
+
+.historial {
+    margin-top: 60px;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.historial h2{
+    margin-bottom: 2%;
+    color: #2e3a59;
+    font-weight: 800;
+}
+
+.version-old {
+    margin-bottom: 20px;
+}
+
+.version-old h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.version-old ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.version-old ul li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.version-old ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #32adfe;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1920px) {
+    .buttons-postheader {
+        top: 50%;
+        display: flex;
+        flex-direction: column; 
+        gap: 5%;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+    }
+}
+
+@media (max-width: 1316px) {
+    .buttons-postheader {
+        top:75%;
+        display: flex;
+        flex-direction: column; 
+        gap: 5%;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+    }
+}
