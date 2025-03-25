@@ -261,6 +261,50 @@ section {
     }
 }
 
+@media (max-width: 1366) {
+
+    .buttons-postheader {
+        top: 86%;
+        display: flex;
+        gap: 5%;
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+        padding: 20px;
+        border: 0px solid;
+    }
+
+    .feature-item {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        max-width: 300px;
+        margin-bottom: 4%;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-items {
+        
+        border-radius: 10px;
+        color: white;
+        max-width: 600px;
+        z-index: 1;
+        margin-right: 30%;
+    }
+    .text-items img {
+        width: 40%;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+}
+
 @media (max-width: 1316px) {
 
     .buttons-postheader {
