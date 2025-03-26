@@ -150,6 +150,7 @@ section {
     margin-right: 5%;
     margin-top: auto;
     margin-bottom: auto;
+    width: 60%;
 }
 
 .feature-item {
@@ -296,9 +297,6 @@ section {
         max-width: 600px;
         z-index: 1;
         margin-right: 30%;
-    }
-    .text-items p{
-        width: 40%;
     }
     .text-items img {
         width: 40%;
